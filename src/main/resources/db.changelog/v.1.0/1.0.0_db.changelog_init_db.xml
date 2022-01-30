@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet  author="@MichealNesh"  id="01">
+        <createTable tableName="url">
+            <column name="id" type="integer" autoIncrement="true" />
+            <column name="count" type="integer" defaultValue="0"/>
+            <column name="original" type="varchar(2000)"/>
+            <column name="rank" type="integer"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
