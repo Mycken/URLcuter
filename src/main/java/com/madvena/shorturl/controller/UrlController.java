@@ -63,7 +63,7 @@ public class UrlController {
         return new RedirectView(service.doRedirect(link));
     }
 
-    @GetMapping("/stats" + "/{link}")
+    @GetMapping("/stats/{link}")
     @Operation(summary = "Link statistic",
             description = "Return statistic data for one link",
             responses = {
